@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                direction: rtl;
+            }
+            table{
+                color: purple;
+            border-color:orangered;                
+            }
+            table tr:first-of-type{
+                color: orangered;
+            }
+            
+            table tr:nth-child(odd){
+                background-color:peachpuff;
+            }
+            table tr:nth-child(even){
+                background-color: palegoldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <table border>
+            <tr>
+                <th>First Name</th>
+                <th>Last Nane</th>
+                <th>Phone Number</th>
+                <th>Password</th>
+            </tr>
+            <tr>
+                <td>Arezoo</td>
+                <td>Rostami</td>
+                <td>09102417600</td>
+                <td>1234</td>
+            </tr>
+            <tr>
+                <td colspan="2">Zahra</td>
+                <td rowspan="2">0937123456</td>
+                <td>4567</td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="2">Mohammad</td>
+                <td>Rostami</td>
+            </tr>
+
+             <tr>
+                <td>Reza</td>
+                <td>Rostami</td>
+             </tr>
+             <tr>
+                <td>Fayyaz</td>
+                <td>Rahmati</td>
+                <td>09121597856</td>
+                <td>4976</td>
+             </tr>
+    </body>
+</html>
