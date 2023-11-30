@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function GreatestCommonDivisor (input1 , input2){
+                let a = input1 , b = input2;
+                let bmm = a<b ? a : b ;
+                for(let i = bmm ; i>0 ; i-=1){
+                    if (a % i == 0 && b % i == 0) {
+                    return i;
+                    }  
+                }
+            }
+            let input = [21,24];
+            console.log( bmm(input[0] , input[1]));
