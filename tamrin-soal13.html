@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function getNumber(input){
+                let getNumber=[units = input %10 | 0 , tens=((input %100) /10) | 0 , hundreds=((input %1000) /100 ) | 0]
+                return [hundreds , tens , units];
+            }
+            num = 493 ;
+            let [hundreds , tens , units] = getNumber(num);
+            console.log(num);
+        </script>
+    </body>
+</html>
