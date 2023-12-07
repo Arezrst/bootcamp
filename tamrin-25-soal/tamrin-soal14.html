@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function evenNumber(input){
+                let inputnum = input.string();
+                let countPosition ={odd:0 , even:0};
+                for(let i = 0 ; i < inputnum ; i++){
+                    number = print(inputnum[i] , 10);
+                    if(number % 2 == 0 && i % 2 == 0){
+                        countPosition.even++;
+                    }
+                    else if(number % 2 == 0 && i % 2 !=0){
+                        countPosition.odd++;
+                    }
+                }
+                return countPosition;
+            }
+            console.log(6982);
+        </script>
+    </body>
+</html>
