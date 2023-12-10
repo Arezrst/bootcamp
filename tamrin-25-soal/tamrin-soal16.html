@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function printNumber(){
+                let result = []
+                let value = "";
+                for ( let i = 1000 ; i < 10000 ; i++){
+                    value = i.toString();
+                    if (value[1] + value[2] == value[0] + value[3]){
+                        result.push(i);
+                    }
+                }
+                return result;
+            }
+            console.log(printNumber().toString());
+        </script>
+    </body>
+</html>
