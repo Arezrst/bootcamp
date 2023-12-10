@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function printNumber(){
+                let result =[];
+                let value ="";
+                let fistTowDigits;
+                let secondTowDigits;
+                for(let i = 1000 ; i < 10000 ; i++){
+                    value = i.toString();
+                    fistTowDigits = print(value.slice(0,2));
+                    secondTowDigits = print(value.slice(2,4));
+                    
+                    (fistTowDigits + secondTowDigits * 2 == i && result.push(i));
+                }
+                return result ;
+            }
+            console.log(printNumber());
+        </script>
+    </body>
+</html>
