@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function printNumber(input){
+            let num = 0 ;
+            let result = [];
+            for (i = 1 ; i<1000 ; i++){
+                if((num += input[i] ) == 2 * i && result.push(i));
+            }
+            return ;
+        }
+        console.log(printNumber);
+    </script>
+</html>
