@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function printNumber(){
+                let result = [];
+                for ( let i=100 ; i<1000 ; i++){
+                    [hundred , tens , units] = getNumber(i) ;
+                    if(num(hundred).lenght == 2 && num(units).lenght == 2){
+                        result.push(i);
+                    }
+                }
+                return result ;
+            }
+            console.log(printNumber());
+        </script>
+    </body>
+</html>
