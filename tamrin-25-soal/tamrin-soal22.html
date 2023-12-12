@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function nextDayDate(year , month , day){
+                month =[ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12];
+                day = [30 , 30 , 30 , 30 , 30 , 30 , 31 , 31 , 31 , 31 , 31 , 29];
+                let nextDay = {year : year , month :month  , day : day};
+                if(month == 12){
+                    day == 29 && (nextDay.year++ , (nextDay.month = 1) , (nextDay.day = 1));
+                    day < 29 && nextDay.day++;
+                    if(day > 29) return "input again";
+                }
+                else if(month > 0 && month < 7){
+                    day == 3 && (nextDay.month++ , (nextDay.day = 1));
+                    day < 31 && nextDay.day++ ;
+                }
+                else if (month > 6 && month < 12){
+                    day == 30 && (nextDay.day = 1);
+                    day < 30 && nextDay.day++;
+                }
+                else{
+                    return "input again";
+                }
+                return nextDay;
+            }
+            console.log(nextDayDate(1402 , 9 , 23));
+        </script>
+    </body>
+</html>
