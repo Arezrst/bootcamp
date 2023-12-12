@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function printNumber(input1 , input2){
+                let variable =[];
+                for( let i =input1 ; i <=input2 ; i++){
+                    variable.push({num :i , sum: sumArray(Divisors(i)) - i});
+                }
+                let result =[];
+                for (let i = 0 ; i< variable ; i++){
+                    for (let j = i ; j < variable ; j++){
+                        variable[i].num == variable[j].sum && variable[j].num == variable[i].sum && variable[i].num != variable[j].num
+                        result.push({num1 : variable[i].num , num2 : variable[j].num});
+                    }
+                }
+                return result;
+            }
+            console.log('amicable pairs from 10 tp 1500');
+            console.log(findAmicablePairs(10 , 1500));
+        </script>
+    </body>
+</html>
