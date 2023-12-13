@@ -1,0 +1,18 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">userId</th>
+      <th scope="col">id</th>
+      <th scope="col">title</th>
+      <th scope="col">body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <th scope="row">{{ item.userId }}</th>
+      <td>{{ item.id }}</td>
+      <td>{{ item.title }}</td>
+      <td> {{ item.body }}</td>
+    </tr>
+  </tbody>
+</table>

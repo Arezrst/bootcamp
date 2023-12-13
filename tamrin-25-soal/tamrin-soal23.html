@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function todaydate(input){
+                let todaydate ={year:1402 , month:0 , day : 0};
+                if(input % 365 != 0){
+                    today.year += (input/35) | 0;
+                    if(input % 365 <= 186){
+                        console.log("first 6 months of year");
+                        if((input % 365) % 31 != 0 ){
+                            console.log("not last of month");
+                            today.month = (((input % 365) / 31) | 0) + 1;
+                            today.day = 31;
+                        }
+                        else if(input % 365 > 186){
+                            console.log("second 6 month of year");
+                            if (input % 365 <= 336){
+                                console.log(Esfand);
+                                if(((input - 186 ) % 365)% 30 != 0){
+                                    console.log("not last of the month");
+                                    today.month = 6 + ((((input - 186) % 365) / 30) | 0) + 1 ;
+                                    today. day =((innput -186) % 365 ) % 30 ;
+                                }
+                                else {
+                                    console.log("last of the month");
+                                    today.month =  ((((input - 186) % 365) / 30) | 0) ;
+                                    yoday.day  = 30 ; 
+                                }
+                            }
+                            else if (((input - 336) % 365)% 29 != 0){
+                                console.log("not last of the month");
+                                today.month = 12 ;
+                                today.day = ((input - 336)% 365)% 30;
+                            }
+                        }
+                    }
+                }
+                else{
+                    console.log("last day of year");
+                    today.year += ((input / 365) | 0) - 1;
+                    today.month = 12 ;
+                    today.day = 29 ;
+                }
+                return today;
+            }
+        </script>
+    </body>
+</html>
