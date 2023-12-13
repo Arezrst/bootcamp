@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function printNumber(num , array){
+                if(array == 0){
+                    return true;
+                }
+                for(let a = 0 ; a < array ; a++){
+                    if(num == array[a]){
+                        return false;
+                    }
+                }
+                return true;
+            }
+            function Number(input){
+                let result;
+                let number;
+                for (let i = 0 ; i < input ; i++){
+                    number=1 ;
+                    for (j = i + 1 ; j < input; j++){
+                        input[i] == input[j] && number++ ;
+                    }
+                    number > 1 && printNumber(input[i]) && (result[input[i]] = number);
+                }
+                return result;
+            }
+            input = [4 , 5 , 5 , 49 , 8 , 4, 7 , 5 , 3];
+            console.log(Number(input));
+        </script>
+    </body>
+</html>
