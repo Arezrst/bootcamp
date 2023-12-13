@@ -1,0 +1,17 @@
+<p class="col-3 mx-auto mt-3">This site is for Arezoo Rostami</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a routerLink="/form" routerLinkActive="active" class="nav-link active" aria-current="page" href="form">Form</a>
+          <a  routerLink="/todoapp"class="nav-link active" href="todoapp">Todo App</a>
+          <a routerLink="/memories" routerLinkActive="active" class="nav-link active" aria-current="page" href="memories">Memories</a>
+          <a class="nav-item nav-link curser-pointer" *ngFor="let item of menuItem"(click)="onClick(item.link)" href="#"> {{ item.link }}</a>
+        </div>
+      </div>
+    </div>
+  </nav>

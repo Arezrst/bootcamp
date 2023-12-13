@@ -1,0 +1,15 @@
+
+<div  class="col-3 mx-auto mt-3">
+    <p>Todo App</p>
+<form>
+    <label for="write it"> write your plan:  </label>
+    <input type="text" name="write it" (input)="getname($event)">
+    <button type="button" (click)="dontknow()"> Done </button>
+</form>
+<ul>
+    <li *ngFor="let item of list ; let i=index"> {{ item }}
+        <button type = "button"> well done</button>
+        <button type="button" (click)="delete(i)">Delete</button>
+    </li>
+</ul>
+</div>
