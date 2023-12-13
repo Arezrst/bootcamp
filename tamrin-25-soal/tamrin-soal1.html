@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function printNumber(input){
+                let sum = 0;
+                let count = 0;
+                for(let i = 0 ; i <input ; i++){
+                    if(input[i] < 0){
+                        sum += input[i];
+                    }
+                    else{
+                        count++;
+                    }
+                }
+                console.log ("variable is:" , input)
+                console.table({
+                    'positive number:': count,
+                    'navigator number:':sum
+                });
+                console.log([1 , 5 , -6 , 5 , -4]);
+            }
+        </script>
+    </body>
+</html>
