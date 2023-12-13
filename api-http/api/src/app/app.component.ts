@@ -13,9 +13,9 @@ import { Gethttpservice } from './app.service';
 })
 export class AppComponent {
   items:any
-  gethttpservice= inject( Gethttpservice)
+  gethapittpservice= inject( Gethttpservice)
 ngOnInit(): void {
-this.gethttpservice.getapihttp().subscribe({
+this.gethapittpservice.getapihttp().subscribe({
   next: (data:any)=>{
     this.items=data
     
