@@ -1,0 +1,20 @@
+
+<div class="container">
+  <ng-container *ngIf="errorText">
+    <span class="alert bg-danger">{{ errorText }}</span>
+  </ng-container>
+
+  <form [formGroup]="registerForm">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-12">
+
+        <input type="text" class="form-control" formControlName="fullname">
+        <input type="text" class="form-control" formControlName="username">
+        <input type="password" class="form-control" formControlName="password">
+
+        <button class="btn btn-success" [disabled]="registerForm.invalid" (click)="onSubmitRegister()"> register</button>
+      </div>
+    </div>
+  </form>
+
+</div>

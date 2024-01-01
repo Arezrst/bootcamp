@@ -1,0 +1,9 @@
+
+<div class="container mx-auto mt-5">
+  <div class="row">  
+    <div *ngIf="authService.isLogin; else isNotLogin" class="btn btn-primary" (click)="logout()">Logout</div>
+      <ng-template #isNotLogin>
+    <div class="col-6  btn btn-primary" (click)="login()">Login</div>
+      </ng-template>
+  <div class="col-6 btn btn-primary" (click)="getBooks()">Get Books</div></div>
+</div>
