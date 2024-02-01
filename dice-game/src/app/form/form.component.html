@@ -1,0 +1,37 @@
+
+  <!-- player's name and submit -->
+  <form [formGroup]="form">
+  <div class="container">
+    <div class="input-group mb-3">
+        <h5 class="form-label" style="color:#c806f9 ">First Player:</h5>
+        <div class="d-flex">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Player's username"
+            formControlName="FirstPlayer"
+          />
+          <div class="input-group-append"></div>
+        </div>
+    </div>
+  
+    <div class="input-group mb-3">
+        <h5 class="form-label" style="color:#c806f9">Second Player:</h5>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Player's username"
+          formControlName="SecondPlayer"
+        />
+      </div>
+      <div class="input-group-append">
+        <button (click)="onClick()" class="btn btn-outline-secondary Button" [disabled]="form.invalid">
+          Submit
+        </button>
+      </div>
+
+      <!-- footer -->
+      <div *ngFor="let i = index let item of Data ">
+        <h4> {{ item.firstPlayer }} </h4>
+        <h4> {{ item.secondPlayer }} </h4>
+    </div>

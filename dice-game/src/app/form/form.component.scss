@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.dice{
+    height: 150px;
+    border: #f906ac solid;
+    
+}
+.Button{
+    background-color: #f906ac;
+    color:#100f10;
+    margin-bottom: 10px;
+}
+.game-container{
+    background-color: #c806f9;
+
+}
+
+.result-container{
+    background-color: #f906ac;
+}

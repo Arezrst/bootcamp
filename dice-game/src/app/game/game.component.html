@@ -1,0 +1,47 @@
+<div>
+  <p>Just Roll the dice and BOOM! it will roll two of them</p>
+  <img src="../assets/1.PNG" id="img1" class="dice" #dice/>
+  <img src="../assets/1.PNG" id="img2" class="dice" #dice/>
+</div>
+<button
+  type="button"
+  class="btn btn-outline-secondary Button"
+  (click)="onClick()"
+>
+  ROll
+</button>
+
+<!-- score -->
+<div *ngFor="let items of gamers">
+  <div class="split left">
+    <div class="center">
+      <h2>{{ items.First }}</h2>
+      <h2>{{ score1 }}</h2>
+    </div>
+  </div>
+
+  <div class="split right">
+    <div class="center">
+      <h2>{{ items.Second }}</h2>
+      <h2>{{ score2 }}</h2>
+    </div>
+  </div>
+</div>
+
+
+<!-- winner -->
+<div *ngFor="let items of win">
+  <div class="split left">
+    <div class="centered">
+      <h2>winner:</h2>
+      <h2>{{ items.winnerName }}</h2>
+    </div>
+  </div>
+
+  <div class="split right">
+    <div class="centered">
+      <h2>losser:</h2>
+      <h2>{{ items.loserName }}</h2>
+    </div>
+  </div>
+</div>
